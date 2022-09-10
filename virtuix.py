@@ -5,21 +5,6 @@
 
 
 
-"""
-This is the basic way to get a question from the user, which can then be inputted into wolfram alpha in order to return an answer
-
-import wolframalpha            
-client = wolframalpha.Client("HW58H7-YWAU8WL4XE")
-
-user = input("What's your question?")
-result = client.query(user)
-print(next(result.results).text)    # .results is the function that allows us to query simply for the 'result' tile, which is the primary answer, and only answer, that we are looking for
-
-"""
-
-
-
-
 import wolframalpha
 client = wolframalpha.Client("HW58H7-YWAU8WL4XE")  # Wolframalpha uses a client key to access it, which is done by using .Client
 
@@ -111,9 +96,6 @@ while True:
 
 
 window.Close()  # Once the program is done, close the window
-
-
-
 
 
 
